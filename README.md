@@ -1,4 +1,4 @@
-# 🎶 Genre-Classification-with-Spotify-and-Genius-Data 🎶
+# Genre-Classification-with-Spotify-and-Genius-Data 🎶
 ## Final project for Statistical methods for high dimensional data course at UniPD
 ### Project description 
 Music streaming services, such as Spotify, continuously add new content that must be accurately labeled and classified by genre. Given the vast amount of data, manually assigning genres to each new song is impractical. Instead, machine learning models can be employed to automatically perform genre classification, especially in large-scale contexts. 
