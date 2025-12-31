@@ -1,10 +1,11 @@
 # Genre-Classification-with-Spotify-and-Genius-Data 🎶
-## Final project for Statistical methods for high dimensional data course at UniPD
-### Project description 
-Music streaming services, such as Spotify, continuously add new content that must be accurately labeled and classified by genre. Given the vast amount of data, manually assigning genres to each new song is impractical. Instead, machine learning models can be employed to automatically perform genre classification, especially in large-scale contexts. 
+## Project description 
+* **Multiclass song genre classification (pop, rap, rock)** using a high-dimensional dataset combining **audio features from Spotify API** and **lyrics scraped via Genius API**, addressing automated music labeling for streaming platforms.
+* **Key insight**: lyrics are highly informative for pop and rap, whereas rock genre is better explained by audio features such as energy, valence, and instrumentalness.
 
-This project focuses on leveraging statistical methods and a neural network approach to classify song genres—Pop, Rap, and Rock—using data from Spotify's audio features and Genius lyrics, both scraped via their respective APIs.
-
-The final dataset consists of 2,285 songs with 13,354 predictors, encompassing both audio features and unigrams from the TF-IDF matrix of the lyrics data. This combination enables the exploration of how text and audio features contribute to genre classification.
+### Modeling pipeline and results
+* **Text mining and feature engineering pipeline** including lyrics cleaning, lemmatization, stemming, TF-IDF construction, and train-test split (2285 songs, 13,554 predictors).
+* **Comparison of multiple models**: multinomial Logistic Regression with Lasso/Ridge/Elastic Net, XGBoost, and Neural Networks with Word2Vec embeddings
+* **Best predictive performance achieved by XGBoost (Accuracy ≈ 0.78)**, while Lasso Logistic Regression provided strong interpretability by identifying genre-specific lexical patterns: **romantic terms for pop, slang/drug-related terms for rap**.
 
 
